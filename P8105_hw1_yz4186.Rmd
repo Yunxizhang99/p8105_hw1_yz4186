@@ -73,7 +73,7 @@ data("penguins", package = "palmerpenguins")
 ### the size of the dataset (using nrow and ncol)
 ### the mean flipper length
 
-We can view the data by `r penguins`.
+
 The data including variable names: `r names(penguins)` , and 
 `r nrow(penguins)` rows, `r ncol(penguins)` columns, the mean of flipper_length_mm is `r mean(penguins$flipper_length_mm, na.rm = T)`. 
 
