@@ -73,13 +73,10 @@ data("penguins", package = "palmerpenguins")
 ### the size of the dataset (using nrow and ncol)
 ### the mean flipper length
 
-```{r}
-penguins
-names(penguins)
-nrow(penguins)
-ncol(penguins)
-mean(penguins$flipper_length_mm, na.rm = T)
-```
+We can view the data by `r penguins`.
+The data including variable names: `r names(penguins)` , and 
+`r nrow(penguins)` rows, `r ncol(penguins)` columns, the mean of flipper_length_mm is `r mean(penguins$flipper_length_mm, na.rm = T)`. 
+
 
 ## Make a scatterplot of flipper_length_mm (y) vs bill_length_mm (x); color points using the species variable (adding color = ... inside of aes in your ggplot code should help).
 
